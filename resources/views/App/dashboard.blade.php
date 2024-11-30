@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name') }} - Bio Link</title>
+    <title>ChasoulUIX Project Portfolio</title>
     <style>
         body {
             margin: 0;
@@ -289,7 +289,7 @@
                 <div style="position: absolute; top: -10px; right: -10px; font-size: 30px; opacity: 0.1; color: #4FC08D;">
                     <i class="fas fa-users"></i>
                 </div>
-                <div style="font-size: 18px; font-weight: 800; color: #4FC08D; margin-bottom: 5px;">20+</div>
+                <div style="font-size: 18px; font-weight: 800; color: #4FC08D; margin-bottom: 5px;">50+</div>
                 <div style="color: #888; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">
                     Clients
                 </div>
@@ -298,7 +298,7 @@
                 <div style="position: absolute; top: -10px; right: -10px; font-size: 30px; opacity: 0.1; color: #61DAFB;">
                     <i class="fas fa-tasks"></i>
                 </div>
-                <div style="font-size: 18px; font-weight: 800; color: #61DAFB; margin-bottom: 5px;">{{ $githubRepos ?? '50+' }}</div>
+                <div style="font-size: 18px; font-weight: 800; color: #61DAFB; margin-bottom: 5px;">{{ $githubRepos ?? '200+' }}</div>
                 <div style="color: #888; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">
                     Projects
                 </div>
@@ -369,27 +369,159 @@
             </a>
         </div>
 
+        <h2 style="text-align: center; margin-bottom: 15px; font-size: 16px; font-weight: 600; color: #ffffff; user-select: none; pointer-events: none;">
+            Work Experience
+        </h2>
+
+        <div class="timeline-container animate-on-scroll" style="overflow-x: auto; padding: 10px 0; user-select: none; pointer-events: none;">
+            <div class="timeline" style="display: flex; min-width: max-content; gap: 15px; padding: 0 10px; animation: scrollTimeline 30s linear infinite;">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item" style="background: #1a1a1a; padding: 10px; border-radius: 6px; min-width: 200px; position: relative; border: 1px solid #333;">
+                    <div style="position: absolute; top: 10px; left: -6px; width: 12px; height: 12px; background: #FF2D20; border-radius: 50%; box-shadow: 0 0 6px rgba(255, 45, 32, 0.5);"></div>
+                    <h3 style="color: #FF2D20; margin: 0 0 6px 0; font-size: 12px;">2017 - 2020</h3>
+                    <h4 style="color: white; margin: 0 0 3px 0; font-size: 14px;">Designer Graphics</h4>
+                    <p style="color: #888; margin: 0 0 6px 0; font-size: 11px;">Freelance Designer</p>
+                    <ul style="color: #888; margin: 0; padding-left: 12px; font-size: 11px; list-style-type: none;">
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Create Graphics Design</li>
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Logo, Banner, Social Media, and Poster</li>
+                        <li><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Adobe Illustrator, Photoshop</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item" style="background: #1a1a1a; padding: 10px; border-radius: 6px; min-width: 200px; position: relative; border: 1px solid #333;">
+                    <div style="position: absolute; top: 10px; left: -6px; width: 12px; height: 12px; background: #FF2D20; border-radius: 50%; box-shadow: 0 0 6px rgba(255, 45, 32, 0.5);"></div>
+                    <h3 style="color: #FF2D20; margin: 0 0 6px 0; font-size: 12px;">2019</h3>
+                    <h4 style="color: white; margin: 0 0 3px 0; font-size: 14px;">IT Technician Intern</h4>
+                    <p style="color: #888; margin: 0 0 6px 0; font-size: 11px;">IT Service & Solutions</p>
+                    <ul style="color: #888; margin: 0; padding-left: 12px; font-size: 11px; list-style-type: none;">
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>PC Assembly and Repair</li>
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Network Setup and Maintenance</li>
+                        <li><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Product Marketing and Sales</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item" style="background: #1a1a1a; padding: 10px; border-radius: 6px; min-width: 200px; position: relative; border: 1px solid #333;">
+                    <div style="position: absolute; top: 10px; left: -6px; width: 12px; height: 12px; background: #FF2D20; border-radius: 50%; box-shadow: 0 0 6px rgba(255, 45, 32, 0.5);"></div>
+                    <h3 style="color: #FF2D20; margin: 0 0 6px 0; font-size: 12px;">2018 - 2021</h3>
+                    <h4 style="color: white; margin: 0 0 3px 0; font-size: 14px;">Help Cooker</h4>
+                    <p style="color: #888; margin: 0 0 6px 0; font-size: 11px;">Grilled Chicken Restaurant</p>
+                    <ul style="color: #888; margin: 0; padding-left: 12px; font-size: 11px; list-style-type: none;">
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Food Preparation and Kitchen Support</li>
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Maintain Kitchen Cleanliness and Safety</li>
+                        <li><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Assist Head Chef with Daily Operations</li>
+                    </ul>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item" style="background: #1a1a1a; padding: 10px; border-radius: 6px; min-width: 200px; position: relative; border: 1px solid #333;">
+                    <div style="position: absolute; top: 10px; left: -6px; width: 12px; height: 12px; background: #FF2D20; border-radius: 50%; box-shadow: 0 0 6px rgba(255, 45, 32, 0.5);"></div>
+                    <h3 style="color: #FF2D20; margin: 0 0 6px 0; font-size: 12px;">2021 - 2022</h3>
+                    <h4 style="color: white; margin: 0 0 3px 0; font-size: 14px;">Talent Scout - Data Analyst</h4>
+                    <p style="color: #888; margin: 0 0 6px 0; font-size: 11px;">International Creative Galaxy Agency</p>
+                    <ul style="color: #888; margin: 0; padding-left: 12px; font-size: 11px; list-style-type: none;">
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Make Talent for International Creative Galaxy Agency</li>
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Talent Management</li>
+                        <li><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Public Relations</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item" style="background: #1a1a1a; padding: 10px; border-radius: 6px; min-width: 200px; position: relative; border: 1px solid #333;">
+                    <div style="position: absolute; top: 10px; left: -6px; width: 12px; height: 12px; background: #FF2D20; border-radius: 50%; box-shadow: 0 0 6px rgba(255, 45, 32, 0.5);"></div>
+                    <h3 style="color: #FF2D20; margin: 0 0 6px 0; font-size: 12px;">2023</h3>
+                    <h4 style="color: white; margin: 0 0 3px 0; font-size: 14px;">Live Stream Product Host</h4>
+                    <p style="color: #888; margin: 0 0 6px 0; font-size: 11px;">International Creative Galaxy Agency</p>
+                    <ul style="color: #888; margin: 0; padding-left: 12px; font-size: 11px; list-style-type: none;">
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Product Presentation and Live Sales</li>
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Customer Engagement and Product Promotion</li>
+                        <li><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Live Stream Sales Performance</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item" style="background: #1a1a1a; padding: 10px; border-radius: 6px; min-width: 200px; position: relative; border: 1px solid #333;">
+                    <div style="position: absolute; top: 10px; left: -6px; width: 12px; height: 12px; background: #FF2D20; border-radius: 50%; box-shadow: 0 0 6px rgba(255, 45, 32, 0.5);"></div>
+                    <h3 style="color: #FF2D20; margin: 0 0 6px 0; font-size: 12px;">2024 juni - september</h3>
+                    <h4 style="color: white; margin: 0 0 3px 0; font-size: 14px;">Frontend Developer & UI/UX Intern</h4>
+                    <p style="color: #888; margin: 0 0 6px 0; font-size: 11px;">Digital Agency</p>
+                    <ul style="color: #888; margin: 0; padding-left: 12px; font-size: 11px; list-style-type: none;">
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Website Frontend Development</li>
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>UI/UX Design and Prototyping</li>
+                        <li><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Responsive Web Design Implementation</li>
+                    </ul>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item" style="background: #1a1a1a; padding: 10px; border-radius: 6px; min-width: 200px; position: relative; border: 1px solid #333;">
+                    <div style="position: absolute; top: 10px; left: -6px; width: 12px; height: 12px; background: #FF2D20; border-radius: 50%; box-shadow: 0 0 6px rgba(255, 45, 32, 0.5);"></div>
+                    <h3 style="color: #FF2D20; margin: 0 0 6px 0; font-size: 12px;">2024 - now</h3>
+                    <h4 style="color: white; margin: 0 0 3px 0; font-size: 14px;">Fullstack Developer</h4>
+                    <p style="color: #888; margin: 0 0 6px 0; font-size: 11px;">Freelance programming</p>
+                    <ul style="color: #888; margin: 0; padding-left: 12px; font-size: 11px; list-style-type: none;">
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Create Website and Mobile App</li>
+                        <li style="margin-bottom: 3px;"><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Laravel, Express.js, Node.js, Vue.js, Flutter</li>
+                        <li><i class="fas fa-check" style="color: #FF2D20; margin-right: 4px;"></i>Open joki, and develop apps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .timeline-container::-webkit-scrollbar {
+                display: none;
+            }
+
+            .timeline-item {
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            @keyframes scrollTimeline {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc(-200px * 7));
+                }
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .animate-on-scroll {
+                animation: fadeInUp 0.4s ease-out;
+            }
+        </style>
+
         <h2 style="text-align: center; margin-bottom: 20px; font-size: 20px; font-weight: 600; color: #ffffff; user-select: none; pointer-events: none;">
             Library Project
         </h2>
 
         <div class="image-slider animate-on-scroll" style="margin: 20px 0; position: relative; height: 200px; overflow: hidden; border-radius: 10px; user-select: none; pointer-events: none;">
-            <div class="slider-container" style="position: absolute; width: 500%; height: 100%; display: flex; user-select: none; pointer-events: none;">
-                <img src="{{ asset('images/Project7.jpg') }}" style="width: 20%; height: 100%; object-fit: cover; user-select: none; pointer-events: none;">
-                <img src="{{ asset('images/Project6.jpg') }}" style="width: 20%; height: 100%; object-fit: cover; user-select: none; pointer-events: none;">
-                <img src="{{ asset('images/Project3.jpg') }}" style="width: 20%; height: 100%; object-fit: cover; user-select: none; pointer-events: none;">
-                <img src="{{ asset('images/Project5.jpg') }}" style="width: 20%; height: 100%; object-fit: cover; user-select: none; pointer-events: none;">
-                <img src="{{ asset('images/Project1.jpg') }}" style="width: 20%; height: 100%; object-fit: cover; user-select: none; pointer-events: none;">
+            <div class="slider-container" style="position: absolute; width: 600%; height: 100%; display: flex; user-select: none; pointer-events: none;">
+                <img src="{{ asset('images/Project7.jpg') }}" style="width: 16.666%; height: 100%; object-fit: cover; user-select: none; pointer-events: none;">
+                <img src="{{ asset('images/Project8.PNG') }}" style="width: 16.666%; height: 100%; object-fit: cover; user-select: none; pointer-events: none;">
+                <img src="{{ asset('images/Project6.jpg') }}" style="width: 16.666%; height: 100%; object-fit: cover; user-select: none; pointer-events: none;">
+                <img src="{{ asset('images/Project3.jpg') }}" style="width: 16.666%; height: 100%; object-fit: cover; user-select: none; pointer-events: none;">
+                <img src="{{ asset('images/Project5.jpg') }}" style="width: 16.666%; height: 100%; object-fit: cover; user-select: none; pointer-events: none;">
+                <img src="{{ asset('images/Project1.jpg') }}" style="width: 16.666%; height: 100%; object-fit: cover; user-select: none; pointer-events: none;">
             </div>
         </div>
 
         <style>
             @keyframes slide {
                 0% { transform: translateX(0); }
-                20% { transform: translateX(-20%); }
-                40% { transform: translateX(-40%); }
-                60% { transform: translateX(-60%); }
-                80% { transform: translateX(-80%); }
+                16.666% { transform: translateX(-16.666%); }
+                33.333% { transform: translateX(-33.333%); }
+                50% { transform: translateX(-50%); }
+                66.666% { transform: translateX(-66.666%); }
+                83.333% { transform: translateX(-83.333%); }
                 100% { transform: translateX(0); }
             }
 
@@ -416,7 +548,6 @@
             });
         </script>
 
-        
 
         <!-- Company Projects -->
         <div class="projects-section animate-on-scroll" style="margin: 30px 0;">
@@ -450,6 +581,24 @@
                         <div class="project-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
                             <span style="background: rgba(2,86,155,0.2); color: #02569B; padding: 6px 12px; border-radius: 20px; font-size: 13px; font-weight: 500;">Flutter</span>
                             <span style="background: rgba(50,50,50,0.4); color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 13px; font-weight: 500;">Express.js</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" style="background: #1a1a1a; padding: 20px; border-radius: 15px; color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; cursor: pointer; width: 300px; flex-shrink: 0; position: relative; animation: borderAnimation 3s linear infinite;">
+                        <h3 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 600;">CMS Website SI Desa</h3>
+                        <p style="color: #aaa; font-size: 15px; margin-bottom: 20px; line-height: 1.5;">A village information system built with Laravel and Vue.js for managing village data, demographics, and administrative</p>
+                        <div class="project-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span style="background: rgba(255,45,32,0.2); color: #FF2D20; padding: 6px 12px; border-radius: 20px; font-size: 13px; font-weight: 500;">Laravel</span>
+                            <span style="background: rgba(79,192,141,0.2); color: #4FC08D; padding: 6px 12px; border-radius: 20px; font-size: 13px; font-weight: 500;">Vue.js</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" style="background: #1a1a1a; padding: 20px; border-radius: 15px; color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; cursor: pointer; width: 300px; flex-shrink: 0; position: relative; animation: borderAnimation 3s linear infinite;">
+                        <h3 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 600;">Website Landing Pages Desa</h3>
+                        <p style="color: #aaa; font-size: 15px; margin-bottom: 20px; line-height: 1.5;">A modern and responsive village landing page website showcasing village profiles</p>
+                        <div class="project-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span style="background: rgba(255,45,32,0.2); color: #FF2D20; padding: 6px 12px; border-radius: 20px; font-size: 13px; font-weight: 500;">Laravel</span>
+                            <span style="background: rgba(79,192,141,0.2); color: #4FC08D; padding: 6px 12px; border-radius: 20px; font-size: 13px; font-weight: 500;">Vue.js</span>
                         </div>
                     </div>
 
