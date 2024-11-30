@@ -354,13 +354,37 @@
                 <h3 style="margin: 0 0 5px 0; font-size: 16px;">My Github</h3>
                 <p style="margin: 0; color: #888; font-size: 12px;">Check out my featured works</p>
             </a>
-            <a href="https://my.hypercloudhost.com/aff.php?aff=37" target="_blank" class="subdomain-card" style="background: #1a1a1a; padding: 15px; border-radius: 8px; text-decoration: none; color: white; transition: transform 0.2s, background-color 0.2s; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative;">
-                <div style="position: absolute; top: -10px; right: -10px; background: #00ADD8; color: white; font-size: 12px; padding: 2px 8px; border-radius: 10px;">Hot Deal!</div>
-                <i class="fas fa-server" style="font-size: 24px; margin-bottom: 10px; color: #00ADD8;"></i>
-                <h3 style="margin: 0 0 5px 0; font-size: 16px;">Web Hosting</h3>
-                <p style="margin: 0; color: #888; font-size: 12px;">Get PROMO Web Hosting by ChasoulUIX</p>
-                <p style="margin: 5px 0 0 0; color: #00ADD8; font-size: 10px;">Limited Time Offer!</p>
-            </a>
+            <div class="subdomain-card dropdown" style="background: #1a1a1a; padding: 15px; border-radius: 8px; color: white; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; cursor: pointer;">
+                <i class="fas fa-address-book" style="font-size: 24px; margin-bottom: 10px; color: #4FC08D;"></i>
+                <h3 style="margin: 0 0 5px 0; font-size: 16px;">Contact Person</h3>
+                <p style="margin: 0; color: #888; font-size: 12px;">Click to view contact options</p>
+                
+                <div class="dropdown-content" style="display: none; position: absolute; top: 0; left: 100%; background: #1a1a1a; border-radius: 8px; margin-left: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 1;">
+                    
+                    <a href="https://instagram.com/chasoul.uix" target="_blank" style="display: flex; align-items: center; padding: 10px 15px; text-decoration: none; color: white; border-bottom: 1px solid #333;">
+                        <i class="fab fa-instagram" style="color: #E1306C; margin-right: 10px;"></i>
+                        Instagram
+                    </a>
+                    <a href="contact@chasouluix.my.id" style="display: flex; align-items: center; padding: 10px 15px; text-decoration: none; color: white;">
+                        <i class="fas fa-envelope" style="color: #EA4335; margin-right: 10px;"></i>
+                        Email
+                    </a>
+                </div>
+            </div>
+
+            <script>
+                document.querySelector('.dropdown').addEventListener('click', function() {
+                    const dropdownContent = this.querySelector('.dropdown-content');
+                    dropdownContent.style.display = dropdownContent.style.display === 'none' ? 'block' : 'none';
+                });
+
+                // Close dropdown when clicking outside
+                window.addEventListener('click', function(e) {
+                    if (!e.target.closest('.dropdown')) {
+                        document.querySelector('.dropdown-content').style.display = 'none';
+                    }
+                });
+            </script>
 
             <a href="https://saweria.co/chasoul" target="_blank" class="subdomain-card" style="background: #1a1a1a; padding: 15px; border-radius: 8px; text-decoration: none; color: white; transition: transform 0.2s, background-color 0.2s; display: flex; flex-direction: column; align-items: center; text-align: center; animation: moveUpDown 1s ease-in-out infinite;">
             <i class="fas fa-hand-holding-dollar" style="font-size: 24px; margin-bottom: 10px; color: #FF2D20;"></i>
@@ -548,7 +572,60 @@
             });
         </script>
 
+            <!-- more liblary project -->
+        <div class="library-projects" style="margin: 20px 0;">
+            <div class="project-images-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-bottom: 20px; display: none;">
+                <img src="{{ asset('images/Project1.jpg') }}" class="project-image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                <img src="{{ asset('images/Project3.jpg') }}" class="project-image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                <img src="{{ asset('images/Project5.jpg') }}" class="project-image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+            </div>
 
+            <div class="more-projects" style="display: none;">
+                <div class="project-images-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+                    <img src="{{ asset('images/Project6.jpg') }}" class="project-image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                    <img src="{{ asset('images/Project7.jpg') }}" class="project-image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                    <img src="{{ asset('images/Project8.PNG') }}" class="project-image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <p style="color: #aaa; font-size: 12px; margin-bottom: 5px;">Click here for more library projects</p>
+                <button id="showMoreBtn" style="background: #1a1a1a; color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-size: 16px; transition: all 0.3s;">
+                    <i class="fas fa-chevron-down" style="font-size: 20px;"></i>
+                </button>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const showMoreBtn = document.getElementById('showMoreBtn');
+                const initialProjects = document.querySelector('.project-images-grid');
+                const moreProjects = document.querySelector('.more-projects');
+                const chevronIcon = showMoreBtn.querySelector('i');
+                let isExpanded = false;
+
+                showMoreBtn.addEventListener('click', function() {
+                    isExpanded = !isExpanded;
+                    initialProjects.style.display = isExpanded ? 'grid' : 'none';
+                    moreProjects.style.display = isExpanded ? 'block' : 'none';
+                    chevronIcon.style.transform = isExpanded ? 'rotate(180deg)' : 'rotate(0)';
+                });
+
+                // Add hover effect to images
+                const projectImages = document.querySelectorAll('.project-image');
+                projectImages.forEach(image => {
+                    image.addEventListener('mouseover', function() {
+                        this.style.transform = 'scale(1.05)';
+                        this.style.transition = 'transform 0.3s';
+                    });
+                    
+                    image.addEventListener('mouseout', function() {
+                        this.style.transform = 'scale(1)';
+                    });
+                });
+            });
+        </script>
+        
         <!-- Company Projects -->
         <div class="projects-section animate-on-scroll" style="margin: 30px 0;">
             <h2 style="text-align: center; margin-bottom: 20px; font-size: 20px; font-weight: 600; color: #ffffff;">
